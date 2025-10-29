@@ -1,0 +1,132 @@
+:where(*) {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  color: #5f564d;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: #312e2c;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.container {
+  padding: 2.5em 2em 2.5em 2em;
+}
+
+section.recipe > p:first-child {
+  margin-bottom: 2em;
+}
+
+div.pink-background {
+  padding: 1.5em;
+  background-color: #fff7fb;
+  border-radius: 0.5em;
+}
+
+li::marker {
+  color: #7a284e;
+}
+
+ol li::marker {
+  font-weight: bold;
+}
+
+.pink-background > p {
+  color: #7a284e;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+ul,
+ol {
+  list-style-position: outside;
+  margin-left: 0.9em;
+}
+
+li:not(li:last-child) {
+  margin-bottom: 0.5em;
+}
+
+span {
+  font-weight: bold;
+}
+
+h2 {
+  color: #854632;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+}
+
+table {
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+td:last-child {
+  font-weight: bold;
+}
+
+td {
+  border-bottom: 1px solid #e3ddd7;
+  padding: 0.2em;
+  text-align: center;
+}
+
+tr:not(tr:last-child) {
+  margin-bottom: 1.5em;
+}
+#prep-time-heading {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+/* 768px - tablet (планшет), 1024px - dextop (комьютер) */
+@media (min-width: 48em) {
+  body {
+    background-color: #f3e5d7;
+  }
+
+  main {
+    background-color: #fff;
+    width: 80%;
+    padding: 2.5em 2em 2.5em 2em;
+    border-radius: 0.5em;
+    margin: 8em auto;
+  }
+  div.container {
+    padding: 2.5em 0 0 0;
+  }
+
+  img {
+    border-radius: 0.5em;
+  }
+}
+@media (min-width: 64em) {
+  body {
+    background-color: #f3e5d7;
+  }
+
+  main {
+    background-color: #fff;
+    width: 50%;
+    padding: 2.5em 2em 2.5em 2em;
+    border-radius: 0.5em;
+    margin: 8em auto;
+  }
+  div.container {
+    padding: 2.5em 0 0 0;
+  }
+
+  img {
+    border-radius: 0.5em;
+  }
+}
