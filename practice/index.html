@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Practice Projects</title>
+  <meta name="description" content="Personal and Frontend Mentor practice projects.">
+  <style>
+    :root {
+      --bg: #0b1f2a;
+      --card: #132c3b;
+      --text: #eef6fb;
+      --muted: #a8c9d8;
+      --accent: #5bd1ff;
+      --border: #1f4557;
+      --focus: #ffd166;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    header, footer {
+      background: #102632;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    a.project {
+      display: block;
+      padding: 1rem;
+      border-radius: var(--radius);
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    a.project:hover {
+      background: #164058;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="padding:1rem;max-width:800px;margin:0 auto;">
+      <a href="../index.html">← Back to Main</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Practice Projects</h1>
+    <ul>
+      <li><a class="project" href="culinary-blog-page/">Culinary Blog Page</a></li>
+      <li><a class="project" href="#">Business Card</a></li>
+      <li><a class="project" href="#">To-Do List</a></li>
+      <li><a class="project" href="#">New Portfolio Section</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Nataliia Svitlychna
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
